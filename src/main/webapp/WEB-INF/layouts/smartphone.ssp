@@ -1,0 +1,10 @@
+<%@val body: String%>
+<%@val s: skinny.Skinny%>
+<html>
+<head>
+<title>smartphone</title>
+</head>
+<body>
+${unescape(body)}
+</body>
+</html>
