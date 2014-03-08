@@ -22,7 +22,7 @@ trait ApplicationController extends SkinnyController
 
   def userAgent = request.getHeader("User-Agent")
 
-  before() {
+  beforeAction() {
     device = userAgent match {
       case mobileRegex(m) => smartDevice
       case _ => defaultDevice
